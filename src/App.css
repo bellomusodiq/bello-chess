@@ -1,9 +1,11 @@
 .App {
   text-align: center;
+  display: flex;
 }
 
 .App-logo {
   height: 40vmin;
+  background: rgba(255, 17, 17, 0.562);
 }
 
 .App-header {
@@ -19,4 +21,65 @@
 
 .App-link {
   color: #09d3ac;
+}
+.Board {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+.square {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  overflow: hidden;
+}
+.Dnd {
+  display: flex;
+}
+.Items {
+  width: 300px;
+}
+.Items > div, .Item {
+  padding: 10px;
+  border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px 20px;
+}
+.Items > div:hover {
+  background: darkseagreen;
+  cursor: pointer;
+}
+.Target {
+  width: 300px;
+  height: 200px;
+  border: 1px black solid;
+  margin-left: 400px;
+}
+.piece {
+  cursor: pointer;
+}
+.square {
+  border: 1px solid black;
+}
+.Container {
+  width: 100%;
+  box-sizing: border-box;
+}
+/* .App {
+  width: 100vw;
+  box-sizing: border-box;
+  justify-content: space-around;
+} */
+.container {
+  width: 100%;
+  box-sizing: border-box;
+}
+.analysis {
+  width: 35%;
+  border: 1px solid black;
 }
